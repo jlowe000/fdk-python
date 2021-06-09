@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-FROM python:3.8-slim
+FROM arm64v8/python:3.8-slim
 
 RUN apt-get update && apt-get upgrade -qy && \
     apt-get install --no-install-recommends -qy build-essential gcc && \
